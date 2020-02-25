@@ -106,6 +106,7 @@ class MetaLinear(MetaModule):
     def named_leaves(self):
         return [('weight', self.weight), ('bias', self.bias)]
 
+# This layer will be used when the loss function is LDAM
 class MetaLinear_Norm(MetaModule):
     def __init__(self, *args, **kwargs):
         super().__init__()
