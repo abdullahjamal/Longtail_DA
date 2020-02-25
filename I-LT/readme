@@ -1,0 +1,17 @@
+To run ImageNet-LT code, please follow the below instructions
+
+1- First download the OLTR repository (https://github.com/zhmiao/OpenLongTailRecognition-OLTR),
+add ResNet50Feature.py in models/ folder
+a) run the stage-1 code, and saved the model.
+
+2- To run our approach on ImageNet-LT for ResNet-50, use the Resnet_F.py to create the ResNet model
+
+and run the following command
+
+```
+python run_imagenet_resnet50_meta.py
+```
+
+# Results
+
+You should be getting around ~48% top-1 test accuracy
