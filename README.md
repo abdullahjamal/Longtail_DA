@@ -15,6 +15,9 @@ imbalanced CIFAR 10 and 100
 To train CIFAR-LT dataset, go C-LT/ folder and run
 
 e.g. to train CIFAR10-LT with an imabalance factor of 200, run
+
+'''
 python main.py --dataset cifar10 --num_classes 10 --imb_factor 0.005
+'''
 
 # Reference
