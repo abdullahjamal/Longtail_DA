@@ -30,7 +30,7 @@ parser.add_argument('--num_meta', type=int, default=10,
 parser.add_argument('--imb_factor', type=float, default=0.1)
 parser.add_argument('--test-batch-size', type=int, default=100, metavar='N',
                     help='input batch size for testing (default: 100)')
-parser.add_argument('--epochs', type=int, default=1, metavar='N',
+parser.add_argument('--epochs', type=int, default=200, metavar='N',
                     help='number of epochs to train')
 parser.add_argument('--lr', '--learning-rate', default=1e-1, type=float,
                     help='initial learning rate')
