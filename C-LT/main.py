@@ -299,7 +299,7 @@ def train_meta(train_loader, validation_loader,model,optimizer_a,epoch):
         grads = torch.autograd.grad(l_f_meta, (meta_model.params()), create_graph=True)
         meta_lr = args.lr * ((0.01 ** int(epoch >= 160)) * (0.01 ** int(epoch >= 180)))
         meta_model.update_params(meta_lr, source_params=grads)
-        del grads
+        #del grads
 
         # Line 8 - 10 2nd forward pass and getting the gradients with respect to epsilon
         input_validation, target_validation = next(iter(validation_loader))
@@ -317,7 +317,7 @@ def train_meta(train_loader, validation_loader,model,optimizer_a,epoch):
         new_eps = eps - 0.01 * grad_eps
         w = weights + new_eps
 
-        del grad_eps
+        del grad_eps, grads
 
         # Lines 12 - 14 computing for the loss with the computed weights
         # and then perform a parameter update
