@@ -29,7 +29,7 @@ python main.py --dataset cifar10 --num_classes 10 --imb_factor 0.005
 
 If you find this code useful, consider citing our work:
 ```
-@article{DBLP:journals/corr/abs-2003-10780,
+@article{JamalLongtail_DA,
   author    = {Muhammad Abdullah Jamal and
                Matthew Brown and
                Ming{-}Hsuan Yang and
