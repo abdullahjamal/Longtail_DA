@@ -1,4 +1,5 @@
 # Rethinking Class-Balanced Methods for Long-Tailed Visual Recognition from a Domain Adaptation Perspective
+[[Arxiv](https://arxiv.org/abs/2003.10780)]
 
 This is PyTorch implementation of the above CVPR 2020 paper.
 
@@ -19,5 +20,3 @@ e.g. to train CIFAR10-LT with an imabalance factor of 200, run
 ```
 python main.py --dataset cifar10 --num_classes 10 --imb_factor 0.005
 ```
-
-# Reference
