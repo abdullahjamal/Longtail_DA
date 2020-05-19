@@ -23,4 +23,25 @@ e.g. to train CIFAR10-LT with an imabalance factor of 200, run
 
 ```
 python main.py --dataset cifar10 --num_classes 10 --imb_factor 0.005
+
 ```
+
+
+If you find this code useful, consider citing our work:
+```
+@article{DBLP:journals/corr/abs-2003-10780,
+  author    = {Muhammad Abdullah Jamal and
+               Matthew Brown and
+               Ming{-}Hsuan Yang and
+               Liqiang Wang and
+               Boqing Gong},
+  title     = {Rethinking Class-Balanced Methods for Long-Tailed Visual Recognition
+               from a Domain Adaptation Perspective},
+  journal   = {CoRR},
+  volume    = {abs/2003.10780},
+  year      = {2020},
+  url       = {https://arxiv.org/abs/2003.10780},
+}
+```
+
+
